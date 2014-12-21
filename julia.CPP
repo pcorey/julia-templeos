@@ -19,7 +19,7 @@ I64 getColor(F64 cr, F64 ci, F64 zr, F64 zi) {
         tzr=zr*zr-zi*zi+cr;
         tzi=2.0*zr*zi+ci;
         zr=tzr;
-        ti=tzi;
+        zi=tzi;
     }
     return ToI64((ToF64(i)/ITERS)*15.0);
 }
