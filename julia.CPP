@@ -43,7 +43,7 @@ U0 Main() {
     for (row=0; row<ROWS; row++) {
         for (col=0; col<COLS; col++) {
             F64 r=LEFT+ToF64(COL_INC*col), i=BOTTOM+ToF64(ROW_INC*row);
-            dc->color=getColor(-0.8, 0.156, r, 1);
+            dc->color=getColor(-0.8, 0.156, r, i);
             I64 x=col*(640/COLS), y=row*(480/ROWS);
             GrRect(dc, x, y, 640/COLS, 480/ROWS);
         }
