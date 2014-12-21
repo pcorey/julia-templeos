@@ -24,7 +24,7 @@ I64 getColor(F64 cr, F64 ci, F64 zr, F64 zi) {
     return ToI64((ToF64(i)/ITERS)*15.0);
 }
 
-U0Main() {
+U0 Main() {
     "Julia Set Generator\n";
     SettingsPush;
 
