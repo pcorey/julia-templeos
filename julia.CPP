@@ -29,13 +29,13 @@ U0 Main() {
     SettingsPush;
 
     I64 k,j;
-    CBGR bgr;
+    CBGR48 bgr;
     for (k=0; k<16; k++) {
-        j=0xFF*k/15;
+        j=0xFFF*k;
         bgr.b=j;
         bgr.g=j;
         bgr.r=j;
-        SetVGAPaletteColor(k, bgr);
+        GrPalletteColorSet(k, bgr);
     }
 
     CDC *dc=DCAlias;
